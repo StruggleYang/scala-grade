@@ -1,0 +1,5 @@
+package ids
+
+object IdsTest {
+
+}

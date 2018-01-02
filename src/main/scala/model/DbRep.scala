@@ -45,4 +45,9 @@ object DbRep {
     res
   }
 
+  // 插入id
+  def addId(id:Long,name:String):Unit = {
+    dataSource.executeUpdate(sql"INSERT INTO ids VALUES(${id},${name})")
+  }
+
 }
